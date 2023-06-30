@@ -1,0 +1,188 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  /* Navbar */
+  
+  .navbar {
+    padding: 1rem 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  /* Hero Section */
+  
+  .hero {
+    background-image: url("hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 10rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+  }
+  
+  /* Services Section */
+  
+  .services {
+    padding: 5rem 0;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .services .card {
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .services .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .services .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* About Section */
+  
+  .about {
+    padding: 5rem 0;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  /* Contact Section */
+  
+  .contact {
+    padding: 5rem 0;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .contact form textarea {
+    resize: none;
+  }
+  
+  .contact form button {
+    padding: 1rem 2rem;
+  }
+  
+  /* Footer */
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+  
+  .footer a {
+    color: #fff;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+    
+    .nav-link {
+      font-size: 1.1rem;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .services .card {
+      margin-bottom: 2rem;
+    }
+    
+    .services .card-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer {
+      font-size: 1rem;
+    }
+  }
+  
