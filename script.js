@@ -1,42 +1,8 @@
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    // Get the contact form element
-    var contactForm = document.getElementById("contactForm");
+// Add your JavaScript code here
+document.getElementById("whatsappButton").addEventListener("click", function() {
+  // Replace the following URL with your own WhatsApp API URL and phone number
+  var whatsappUrl = "https://api.whatsapp.com/send?phone=8335899606&text=Hello%20there!";
   
-    // Add event listener for form submission
-    contactForm.addEventListener("submit", function(event) {
-      // Prevent the default form submission
-      event.preventDefault();
-  
-      // Get the form fields
-      var nameInput = document.getElementById("name");
-      var emailInput = document.getElementById("email");
-      var messageInput = document.getElementById("message");
-  
-      // Get the form values
-      var name = nameInput.value.trim();
-      var email = emailInput.value.trim();
-      var message = messageInput.value.trim();
-  
-      // Perform form validation
-      if (name === "" || email === "" || message === "") {
-        alert("Please fill in all the fields.");
-        return;
-      }
-  
-      // Clear the form inputs
-      nameInput.value = "";
-      emailInput.value = "";
-      messageInput.value = "";
-  
-      // Send the form data to the server (you can customize this part)
-      // For demonstration purposes, we'll just log the form data
-      console.log("Name: " + name);
-      console.log("Email: " + email);
-      console.log("Message: " + message);
-  
-      // Show a success message (you can customize this part)
-      alert("Thank you for your message! We will get back to you soon.");
-    });
-  });
-  
+  // Open WhatsApp in a new tab when the button is clicked
+  window.open(whatsappUrl, "_blank");
+});
